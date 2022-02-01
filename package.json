@@ -1,6 +1,6 @@
 {
   "name": "loader-of-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A loader to load and run another loader asynchronously",
   "main": "./index.js",
   "exports": {
@@ -11,7 +11,10 @@
     "lint": "eslint",
     "release": "standard-version"
   },
-  "keywords": ["webpack", "loader"],
+  "keywords": [
+    "webpack",
+    "loader"
+  ],
   "author": "otakustay",
   "license": "MIT",
   "devDependencies": {

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/otakustay/loader-of-loader/compare/v1.0.0...v1.0.1) (2022-02-01)
+
+
+### Bug Fixes
+
+* don't add loader to build dependency since it causes cache serialization error ([c23de06](https://github.com/otakustay/loader-of-loader/commit/c23de06aa261ec5d4364e033b780bfc43e7332ca))
+
 ## 1.0.0 (2022-02-01)
 
 
