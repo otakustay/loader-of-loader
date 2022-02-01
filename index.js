@@ -28,7 +28,6 @@ module.exports = async function lazyLoader() {
             missingDependencies.forEach(v => this.addMissingDependency(v));
             fileDependencies.forEach(v => this.addDependency(v));
             contextDependencies.forEach(v => this.addContextDependency(v));
-            this.addBuildDependency(loader);
             callback(null, ...result);
         }
     );
