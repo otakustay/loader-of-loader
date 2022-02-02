@@ -13,13 +13,14 @@ module.exports = async function lazyLoader(source) {
         context: {
             getOptions: () => options,
         },
-        readResource: (resource, data) => {
+        readResource: (resource, callback) => {
             if (source == null) {
                 const fs = this.fs ?? fs;
-                fs.readFile(resource, data);
+                fs.readFile(resource, callback);
             }
-
-            return Buffer.from(source);
+            else {
+                callback(null, Buffer.from(source));
+            }
         },
     };
 
