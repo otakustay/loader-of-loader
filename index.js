@@ -1,7 +1,7 @@
 const fs = require('fs');
 const {runLoaders} = require('loader-runner');
 
-module.exports = async function lazyLoader() {
+module.exports = async function lazyLoader(source) {
     const callback = this.async();
 
     const {loader, type, options} = await this.getOptions().resolveLoader();
@@ -13,7 +13,14 @@ module.exports = async function lazyLoader() {
         context: {
             getOptions: () => options,
         },
-        readResource: fs.readFile,
+        readResource: (resource, data) => {
+            if (source == null) {
+                const fs = this.fs ?? fs;
+                fs.readFile(resource, data);
+            }
+
+            return Buffer.from(source);
+        },
     };
 
     runLoaders(
