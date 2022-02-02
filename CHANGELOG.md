@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.3](https://github.com/otakustay/loader-of-loader/compare/v1.0.2...v1.0.3) (2022-02-02)
+
+
+### Bug Fixes
+
+* callback to readResource ([0303a98](https://github.com/otakustay/loader-of-loader/commit/0303a987c23a3efa8eb0a1cb9df5113bcdb51fca))
+
 ### [1.0.2](https://github.com/otakustay/loader-of-loader/compare/v1.0.1...v1.0.2) (2022-02-02)
 
 
